@@ -1,11 +1,10 @@
 import './App.css';
+import Index from "./components"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Hello World
-      </header>
+      < Index />
     </div>
   );
 }
