@@ -276,6 +276,11 @@ header {
 .conhecimento-text {
     font-family: var(--font-secundary);
     margin-top: 1rem;
+    font-size: 1rem;
+}
+.conhecimento-text p {
+    color: #272727;
+    font-weight: 600;
 }
 .conhecimento-img-wrapper {
     grid-column: 7 / 11;
@@ -357,6 +362,7 @@ header {
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 .card-info button {
     width: 8rem;
@@ -388,7 +394,7 @@ header {
 }
 .contato-left {
     width: 35%;
-    background: linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22, 0.9))/*, url("../img/contato.jpg")*/;
+    background: linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22, 0.9)), url("../assets/contato.jpg");
     background-size: cover;
 }
 .contato-right {

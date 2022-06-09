@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./index.css";
 import conhecimento from "../assets/conhecimentos.png";
 import projeto from "../assets/proj.jpg";
+import netflix from "../assets/printNetflix.png";
+import reserva from "../assets/printReserva.png";
 import banner_img from "../assets/banner-img.jpg";
 
 function Index() {
@@ -12,6 +14,9 @@ function Index() {
     currentMenu ? setShowMenu(false) : setShowMenu(true)
   }
 
+  const handleExternUrl = (url) => {
+    window.open(url)
+  }
   return (
     <div className={`container ${showMenu ? 'show-menu' : ''}`}>
       <div className="hamburguer" onClick={e => handleShowMenu(showMenu)}>
@@ -27,7 +32,9 @@ function Index() {
         <div className="banner">
           <h1>Web Developer <br />Fullstack</h1>
           <p>Ericson Matheus</p>
-          <button>Saiba mais</button>
+          <p style={{fontSize: 24}}><strong>Sou desenvolvedor web fullstack e sou formado pela Estácio<br/>
+          Sou apaixonado por resolver problemas e aprender. Sempre aberto<br/>
+          a novos desafios e pronto para enfrentar mudanças.</strong></p>
         </div>
       </header>
       <aside className="sidebar">
@@ -52,59 +59,67 @@ function Index() {
         <div className="conhecimentos">
           <div className="conhecimento">
             <div className="conhecimento-header">
-              <i className="fab fa-html5"></i>
-              <h3>HTML</h3>
-            </div>
-            <div className="conhecimento-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex veritatis quo esse non quae quidem.
-                Labore quis maxime, tempore, porro adipisci nostrum tempora laborum, dolorem vero alias maiores enim!</p>
-            </div>
-          </div>
-          <div className="conhecimento">
-            <div className="conhecimento-header">
-              <i className="fab fa-css3-alt"></i>
-              <h3>CSS</h3>
-            </div>
-            <div className="conhecimento-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex veritatis quo esse non quae quidem.
-                Labore quis maxime, tempore, porro adipisci nostrum tempora laborum, dolorem vero alias maiores enim!</p>
-            </div>
-          </div>
-          <div className="conhecimento">
-            <div className="conhecimento-header">
-              <i className="fas fa-pencil-alt"></i>
-              <h3>Design</h3>
-            </div>
-            <div className="conhecimento-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex veritatis quo esse non quae quidem</p>
-            </div>
-          </div>
-          <div className="conhecimento">
-            <div className="conhecimento-header">
               <i className="fab fa-js"></i>
               <h3>Javascript</h3>
             </div>
             <div className="conhecimento-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex veritatis quo esse non quae enim!</p>
+              <p>Comecei a estudar esta linguagem em meados de 2021 e me identifiquei, desde então tenho focado os estudos 
+                nesta linguagem. Esta não foi a primeira linguagem que aprendi, porém tem sido a que mais utilizo.</p>
             </div>
           </div>
           <div className="conhecimento">
             <div className="conhecimento-header">
-              <i className="fab fa-bootstrap"></i>
-              <h3>Bootstrap</h3>
+              <i className="fab fa-php"></i>
+              <h3>PHP</h3>
             </div>
             <div className="conhecimento-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex veritatis quo esse non quae quidem.
-                Labore quis maxime, tempore, porro adipisci nostrum tempora laborum, dolorem vero alias maiores enim!</p>
+              <p>Tenho conhecimentos nesta linguagem e já realizei projeto freelancer utilizando desta linguagem juntamente
+                com o framework Laravel.
+              </p>
+            </div>
+          </div>
+          <div className="conhecimento">
+            <div className="conhecimento-header">
+              <i className="fab fa-java"></i>
+              <h3>Java</h3>
+            </div>
+            <div className="conhecimento-text">
+              <p>Comecei a estudar Java durante a faculdade, realizei diversas atividades utilizando desta linguagem, e esta foi
+                um dos pilares para eu ingressar e nesta área.
+              </p>
             </div>
           </div>
           <div className="conhecimento">
             <div className="conhecimento-header">
               <i className="fab fa-github"></i>
-              <h3>Github</h3>
+              <h3>GitHub</h3>
             </div>
             <div className="conhecimento-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisiorum, dolorem vero alias maiores enim!</p>
+              <p>Atualmente tenho utilizando bastante desta ferramenta em meu local de trabalho, com equipes maiores e projetos maiores
+                tenho adquirido diversas habilidades, principalmente em versionamento de código.
+              </p>
+            </div>
+          </div>
+          <div className="conhecimento">
+            <div className="conhecimento-header">
+              <i className="fab fa-react"></i>
+              <h3>React</h3>
+            </div>
+            <div className="conhecimento-text">
+              <p>Comteporaneamente ao inicio dos meus estudos em javascript, comecei a utilizar deste framework, onde tive a oportunidade
+                de aprimorar minhas habilidades na criação de frontend. Assim como este portfólio.
+              </p>
+            </div>
+          </div>
+          <div className="conhecimento">
+            <div className="conhecimento-header">
+              <i className="fab fa-laravel"></i>
+              <h3>Laravel</h3>
+            </div>
+            <div className="conhecimento-text">
+              <p>Desenvolvi alguns projetos utilizando deste framework, em especial o meu primeiro projeto freelancer. Tenho conhecimento
+                e facilidade na utilização deste.
+              </p>
             </div>
           </div>
           <div className="conhecimento-img-wrapper">
@@ -118,33 +133,31 @@ function Index() {
         </div>
         <div className="projetos">
           <div className="card">
-            <div className="card-img-wrapper"><img src={projeto} alt="Projeto1" /></div>
+            <div className="card-img-wrapper"><img src={netflix} alt="Clone Netflix" /></div>
             <div className="card-info">
-              <h2>ToDo List</h2>
-              <h3>Javascript</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus. A ab vitae quasi nostrum
-                exercitationem, esse laboriosam</p>
-              <button className="btn">Saiba mais</button>
+              <h2>Clone Netflix</h2>
+              <h3>Javascript - React</h3>
+              <p>Clone da netflix criado utilizando React Js</p>
+              <button className="btn" onClick={e => handleExternUrl("https://clone-netflix-portfolio.netlify.app/")}>Acessar</button>
             </div>
           </div>
           <div className="card">
-            <div className="card-img-wrapper"><img src={projeto} alt="Projeto1" /></div>
+            <div className="card-img-wrapper"><img src={reserva} alt="Reservas" /></div>
             <div className="card-info">
-              <h2>Maratona</h2>
-              <h3>HTML, CSS</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus. A ab vitae quasi nostrum
-                exercitationem, esse laboriosam</p>
-              <button className="btn">Saiba mais</button>
+              <h2>Reservas</h2>
+              <h3>Javascript - React</h3>
+              <p>Projeto freelancer de reserva de máquinas de lavar e secadoras. <br/>Em desenvolvimento</p>
+              <button className="btn" onClick={e => handleExternUrl("https://sistema-reservas.netlify.app/")}>Acessar</button>
             </div>
           </div>
           <div className="card">
-            <div className="card-img-wrapper"><img src={projeto} alt="Projeto1" /></div>
+            <div className="card-img-wrapper"><img src={projeto} alt="Projeto" /></div>
             <div className="card-info">
               <h2>Casa Bela</h2>
               <h3>HTML</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus. A ab vitae quasi nostrum
                 exercitationem, esse laboriosam</p>
-              <button className="btn">Saiba mais</button>
+              <button className="btn">Acessar</button>
             </div>
           </div>
         </div>
