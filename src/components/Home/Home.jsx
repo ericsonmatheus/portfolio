@@ -1,12 +1,12 @@
 import React from "react";
 import "./Home.css";
-import banner_img from "../../assets/banner-img.jpg";
+import banner from "../../assets/banner-img.jpg";
 
 function Home() {
     return (
         <header id="home">
             <div className="img-wrapper">
-                <img src={banner_img} alt="Banner Principal"></img>
+                <img src={banner} alt="Banner Principal"></img>
             </div>
             <div className="banner">
                 <h1>Web Developer <br />Fullstack</h1>

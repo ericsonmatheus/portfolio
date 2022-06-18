@@ -1,7 +1,7 @@
-.sessao-projetos {
+.project-session {
   height: 100vh;
 }
-.projetos {
+.projects {
   display: flex;
   justify-content: space-evenly;
 }

@@ -1,11 +1,9 @@
 import React from "react";
 import "./Project.css";
 
-import projeto from "../../assets/proj.jpg";
-import netflix from "../../assets/printNetflix.png";
-import reserva from "../../assets/printReserva.png";
-
-
+import project from "../../assets/project.jpg";
+import netflix from "../../assets/netflix.png";
+import reserve from "../../assets/reserve.png";
 
 function Project() {
 
@@ -14,11 +12,11 @@ function Project() {
   }
 
   return (
-    <section className="sessao-projetos" id="projeto">
-      <div className="sessao-header">
+    <section className="project-session" id="project">
+      <div className="header-session">
         <h1>Projetos</h1>
       </div>
-      <div className="projetos">
+      <div className="projects">
         <div className="card">
           <div className="card-img-wrapper"><img src={netflix} alt="Clone Netflix" /></div>
           <div className="card-info">
@@ -29,7 +27,7 @@ function Project() {
           </div>
         </div>
         <div className="card">
-          <div className="card-img-wrapper"><img src={reserva} alt="Reservas" /></div>
+          <div className="card-img-wrapper"><img src={reserve} alt="Reservas" /></div>
           <div className="card-info">
             <h2>Reservas</h2>
             <h3>Javascript - React</h3>
@@ -38,7 +36,7 @@ function Project() {
           </div>
         </div>
         <div className="card">
-          <div className="card-img-wrapper"><img src={projeto} alt="Projeto" /></div>
+          <div className="card-img-wrapper"><img src={project} alt="Projeto" /></div>
           <div className="card-info">
             <h2>Casa Bela</h2>
             <h3>HTML</h3>
