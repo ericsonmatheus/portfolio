@@ -21,7 +21,7 @@ function Contact() {
               <textarea class="field" id="message"></textarea>
               <label for="message" class="field-label">Mensagem</label>
             </div>
-            <button class="btn btn-submit" type="submit">Enviar</button>
+            <button class="btn-contact" type="submit">Enviar</button>
           </form>
         </div>
       </div>
