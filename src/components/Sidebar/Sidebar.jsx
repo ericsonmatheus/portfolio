@@ -13,9 +13,9 @@ function Sidebar() {
         </ul>
       </nav>
       <div className="social-media">
-        <a href="/"><i className="fab fa-facebook"></i></a>
-        <a href="/"><i className="fab fa-github"></i></a>
-        <a href="/"><i className="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ericson-matheus/"><i className="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ericsonmatheus"><i className="fab fa-github"></i></a>
+        <a href="https://twitter.com/manosony21"><i className="fab fa-twitter"></i></a>
       </div>
     </aside>
   )
