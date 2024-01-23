@@ -12,28 +12,29 @@ function Knowledge() {
       <div className="knowledges">
         <div className="knowledge">
           <div className="knowledge-header">
-            <i className="fab fa-js"></i>
-            <h3>Javascript</h3>
+            <i className="fab fa-python"></i>
+            <h3>Python</h3>
           </div>
           <div className="knowledge-text">
-            <p>Comecei a estudar esta linguagem em meados de 2021 e me identifiquei, desde então tenho focado os estudos
-              {/* nesta linguagem. Esta não foi a primeira linguagem que aprendi, porém tem sido a que mais utilizo. */}</p>
+            <p>Ampla experiência na linguagem Python, com cerca de 2 anos de prática. Concentro-me no desenvolvimento e aprimoramento 
+              de automações e pipelines existentes em ferramentas como Airflow ou Kedro.</p>
           </div>
         </div>
         <div className="knowledge">
           <div className="knowledge-header">
-            <i className="fab fa-php"></i>
-            <h3>PHP</h3>
+            <i class="fas fa-database"></i>
+            <h3>PostgreSQL</h3>
           </div>
           <div className="knowledge-text">
-            <p>Tenho conhecimentos nesta linguagem e já realizei projeto freelancer utilizando desta linguagem{/*juntamente com o framework Laravel.*/}
+            <p>Conhecimentos aplicados diáriamente em SQL, especificamente com PostgreSQL. Realização de análise de dados consumidos via query no banco de dados.
+              Além de criação de views com a utilização da ferramenta DBT.
             </p>
           </div>
         </div>
         <div className="knowledge">
           <div className="knowledge-header">
-            <i className="fab fa-java"></i>
-            <h3>Java</h3>
+            <i class="fas fa-chart-pie"></i>
+            <h3>Power BI</h3>
           </div>
           <div className="knowledge-text">
             <p>Comecei a estudar Java durante a faculdade, realizei diversas atividades utilizando desta linguagem{/* , e esta foi um dos pilares para eu ingressar e nesta área. */}
@@ -52,8 +53,8 @@ function Knowledge() {
         </div>
         <div className="knowledge">
           <div className="knowledge-header">
-            <i className="fab fa-react"></i>
-            <h3>React</h3>
+            <i class="fal fa-fan"></i>
+            <h3>Airflow</h3>
           </div>
           <div className="knowledge-text">
             <p>Comteporaneamente ao inicio dos meus estudos em javascript, comecei a utilizar deste framework{/*, onde tive a oportunidade de aprimorar minhas habilidades na criação de frontend. Assim como este portfólio.*/}
@@ -62,7 +63,7 @@ function Knowledge() {
         </div>
         <div className="knowledge">
           <div className="knowledge-header">
-            <i className="fab fa-laravel"></i>
+            <i className="fa-solid fa-diamond"></i>
             <h3>Laravel</h3>
           </div>
           <div className="knowledge-text">
